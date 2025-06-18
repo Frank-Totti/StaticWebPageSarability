@@ -1,16 +1,25 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Alternar Imágenes</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sahara x Francesco</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+  <!-- Estrellas decorativas a los lados -->
+  <img src="estrellita.jpg" class="decor izquierda">
+  <img src="estrellita.jpg" class="decor derecha">
+
   <h1>Sahara x Francesco</h1>
-  <button onclick="alternarImagen()">Cambiar imagen</button>
-  <br/>
-  <img id="imagen" src="imagen1.jpg" alt="Imagen">
+
+  <!-- Imagen con botón decorativo -->
+  <img src="corazon.jpg" id="boton" alt="Corazón" onclick="alternarImagen()">
+  
+  <br>
+  <img id="imagen" src="imagen1.jpg" alt="Imagen principal">
+
   <script src="script.js"></script>
 </body>
 </html>

@@ -1,7 +1,7 @@
-const imagenes = ["imagen1.jpg", "imagen2.jpg"];
-let indice = 0;
+let mostrandoPrimera = true;
 
 function alternarImagen() {
-  indice = 1 - indice;
-  document.getElementById("imagen").src = imagenes[indice];
+  const img = document.getElementById("imagen");
+  mostrandoPrimera = !mostrandoPrimera;
+  img.src = mostrandoPrimera ? "imagen1.jpg" : "imagen2.jpg";
 }
